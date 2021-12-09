@@ -5,6 +5,19 @@ const path = require('path');
 
 const app = express();
 
+
+
+app.set('view engine', 'ejs')
+
+// TODO: MAIN PAGE
+
+app.get('/', async (req, res, next) => {
+    res.render('main');
+})
+
+
+//TODO: UPLOAD
+
 app.use(fileUpload({
     useTempFiles: true,
     tempFileDir: path.join(__dirname, 'tmp'),
@@ -13,67 +26,97 @@ app.use(fileUpload({
     // SIZE LIMIT
     // limits: { fileSize: 1024 },
 }))
-
-app.set('view engine', 'ejs')
+// SERVER
 
 app.get('/upload', async (req, res, next) => {
     res.render('index')
 })
 
-app.post('/single', async (req, res, next) => {
-    try {
-        const file = req.files.mfile
-        console.log(file)
-        const fileName = new Date().getTime().toString() + path.extname(file.name)
-        const savePath = path.join(__dirname, 'public', 'uploads', fileName)
+// app.post('/single', async (req, res, next) => {
+//     try {
+//         const file = req.files.mfile
+//         console.log(file)
+//         const fileName = new Date().getTime().toString() + path.extname(file.name)
+//         const savePath = path.join(__dirname, 'public', 'uploads', fileName)
         
-// SIZE LIMIT
-        // if(file.truncated) {
-        //     throw new Error('File size is too big...')
-        // }
+// // SIZE LIMIT
+//         // if(file.truncated) {
+//         //     throw new Error('File size is too big...')
+//         // }
 
 
-        await file.mv(savePath)
-        res.redirect('/upload')
-    } catch (error) {
-        console.log(error);
-        res.send('Error uploading file')
-    }
-})
+//         await file.mv(savePath)
+//         res.redirect('/upload')
+//     } catch (error) {
+//         console.log(error);
+//         res.send('Error uploading file')
+//     }
+// })
 
-app.post('/multiple', async(req, res , next) => {
+app.post('/multiple', async (req, res, next) => {
     try {
-        const files = req.files.mfiles
-
-        // let promises = []
-        // files.forEach(file => {
-        //     const savePath = path.join(__dirname, 'public', 'upload', file.name)
-        //     promises.push(file.mv(savePath))
-        // })
-        
-
-        const promises = files.map((file) => {
-            const fileName = new Date().getTime().toString() + path.extname(file.name)
-           const savePath = path.join(__dirname, 'public', 'upload', fileName)
-           return file.mv(savePath)
-        })
-
-        await Promise.all(promises)
-        res.redirect('/upload');
+      const files = req.files.mFiles
+  
+      // files.forEach(file => {
+      //   const savePath = path.join(__dirname, 'public', 'uploads', file.name)
+      //   await file.mv(savePath)
+      // })
+  
+      // let promises = []
+      // files.forEach((file) => {
+      //   const savePath = path.join(__dirname, 'public', 'uploads', file.name)
+      //   promises.push(file.mv(savePath))
+      // })
+  
+      const promises = files.map((file) => {
+        const savePath = path.join(__dirname, 'public', 'uploads', file.name)
+        return file.mv(savePath)
+      })
+  
+      await Promise.all(promises)
+  
+      res.redirect('/upload')
     } catch (error) {
-        console.log(error);
-        res.send('Error uploading file')
+      console.log(error)
+      res.send('Error uploading files...')
     }
-})
-
-
-// SERVER
+  })
 // TODO: Download
 // TODO: Drag unable
 app.use(
     '/download',
-    express.static('../../../../../../'),
-    serveIndex('../../../../../../', {icons: true})
+    express.static('../server/public'),
+    serveIndex('../server/public', {icons: true})
 );
 
-app.listen(5000, () => console.log('rocket on 5000...'));
+// router.get('/download', function (req, res, next) {
+
+//     res.download(res.url, file.name);
+// })
+
+// app.get("/download", (res, req) => {
+//     var filepath = fs.readFileSync(__dirname + '/upload-folder/dramaticpenguin.MOV', 'binary');
+    // console.log(fs.stats)
+
+
+    // res.send(savePath);
+//     const testFolder = './public';
+
+// fs.readdirSync(testFolder).forEach(file => {
+//   console.log(file);
+// });
+
+//     var path = res.url;
+// })
+
+// var filePath ;
+
+// app.get('/download', (res, req) => {
+//     filePath = res.url;
+// })
+
+app.listen(5000, () => {
+    // console.log(FileList);
+    // console.log("The is path of file is " + filePath);
+    console.log("Rocket is not port 5000");
+});

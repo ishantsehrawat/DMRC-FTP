@@ -1,0 +1,75 @@
+﻿1,4,Shastri Park,GAT_00001,192.128.5.151,admin,GATE
+1,4,Shastri Park,GAT_00002,192.128.5.152,admin,GATE
+1,4,Shastri Park,GAT_00003,192.128.5.153,admin,GATE
+1,4,Shastri Park,GAT_00004,192.128.5.154,admin,GATE
+1,4,Shastri Park,GAT_00005,192.128.5.155,admin,GATE
+1,4,Shastri Park,GAT_00011,192.128.5.161,admin,GATE
+1,4,Shastri Park,GAT_00012,192.128.5.162,admin,GATE
+1,4,Shastri Park,GAT_00013,192.128.5.163,admin,GATE
+1,5,Kashmere Gate Rail,GAT_00011,192.130.5.161,admin,GATE
+1,5,Kashmere Gate Rail,GAT_00012,192.130.5.162,admin,GATE
+1,5,Kashmere Gate Rail,GAT_00013,192.130.5.163,admin,GATE
+1,5,Kashmere Gate Rail,GAT_00014,192.130.5.164,admin,GATE
+1,5,Kashmere Gate Rail,GAT_00015,192.130.5.165,admin,GATE
+1,5,Kashmere Gate Rail,GAT_00016,192.130.5.166,admin,GATE
+1,5,Kashmere Gate Rail,GAT_00017,192.130.5.167,admin,GATE
+1,5,Kashmere Gate Rail,GAT_00018,192.130.5.168,admin,GATE
+1,5,Kashmere Gate Rail,GAT_00019,192.130.5.169,admin,GATE
+1,5,Kashmere Gate Rail,GAT_00020,192.130.5.170,admin,GATE
+1,5,Kashmere Gate Rail,GAT_00021,192.130.5.171,admin,GATE
+1,5,Kashmere Gate Rail,GAT_00022,192.130.5.172,admin,GATE
+1,7,Pul Bangash,GAT_00001,192.132.5.151,ucm,ucmpasswd
+1,7,Pul Bangash,GAT_00002,192.132.5.152,ucm,ucmpasswd
+1,7,Pul Bangash,GAT_00003,192.132.5.153,ucm,ucmpasswd
+1,7,Pul Bangash,GAT_00004,192.132.5.154,ucm,ucmpasswd
+1,7,Pul Bangash,GAT_00005,192.132.5.155,ucm,ucmpasswd
+1,7,Pul Bangash,GAT_00006,192.132.5.156,ucm,ucmpasswd
+1,7,Pul Bangash,GAT_00011,192.132.5.161,ucm,ucmpasswd
+1,7,Pul Bangash,GAT_00012,192.132.5.162,ucm,ucmpasswd
+1,7,Pul Bangash,GAT_00013,192.132.5.163,ucm,ucmpasswd
+1,7,Pul Bangash,GAT_00014,192.132.5.164,ucm,ucmpasswd
+3,73,Akshardham,GAT_00001,192.198.5.151,ucm,ucmpasswd
+3,73,Akshardham,GAT_00002,192.198.5.152,ucm,ucmpasswd
+3,73,Akshardham,GAT_00003,192.198.5.153,ucm,ucmpasswd
+3,73,Akshardham,GAT_00004,192.198.5.154,ucm,ucmpasswd
+3,73,Akshardham,GAT_00005,192.198.5.155,ucm,ucmpasswd
+3,73,Akshardham,GAT_00006,192.198.5.156,ucm,ucmpasswd
+3,73,Akshardham,GAT_00026,192.198.5.176,ucm,ucmpasswd
+3,73,Akshardham,GAT_00031,192.198.5.181,ucm,ucmpasswd
+3,73,Akshardham,GAT_00032,192.198.5.182,ucm,ucmpasswd
+3,73,Akshardham,GAT_00011,192.198.5.161,ucm,ucmpasswd
+3,73,Akshardham,GAT_00012,192.198.5.162,ucm,ucmpasswd
+3,73,Akshardham,GAT_00022,192.198.5.172,ucm,ucmpasswd
+3,73,Akshardham,GAT_00023,192.198.5.173,ucm,ucmpasswd
+3,73,Akshardham,GAT_00024,192.198.5.174,ucm,ucmpasswd
+3,73,Akshardham,GAT_00025,192.198.5.175,ucm,ucmpasswd
+4,137,Vaishali,GAT_00001,192.211.5.151,anonymous,wsftple@
+4,137,Vaishali,GAT_00002,192.211.5.152,anonymous,wsftple@
+4,137,Vaishali,GAT_00003,192.211.5.153,anonymous,wsftple@
+4,137,Vaishali,GAT_00004,192.211.5.154,anonymous,wsftple@
+4,137,Vaishali,GAT_00005,192.211.5.155,anonymous,wsftple@
+4,137,Vaishali,GAT_00006,192.211.5.156,anonymous,wsftple@
+4,137,Vaishali,GAT_00027,192.211.5.177,admin,GATE
+4,137,Vaishali,GAT_00031,192.211.5.181,ucm,ucmpasswd
+4,137,Vaishali,GAT_00032,192.211.5.182,ucm,ucmpasswd
+4,137,Vaishali,GAT_00021,192.211.5.171,admin,GATE
+4,137,Vaishali,GAT_00022,192.211.5.172,admin,GATE
+4,137,Vaishali,GAT_00023,192.211.5.173,admin,GATE
+4,137,Vaishali,GAT_00024,192.211.5.174,admin,GATE
+4,137,Vaishali,GAT_00025,192.211.5.175,admin,GATE
+4,137,Vaishali,GAT_00026,192.211.5.176,admin,GATE
+4,137,Vaishali,GAT_00007,192.211.5.157,anonymous,wsftple@
+4,137,Vaishali,GAT_00008,192.211.5.158,anonymous,wsftple@
+4,137,Vaishali,GAT_00009,192.211.5.159,anonymous,wsftple@
+4,137,Vaishali,GAT_00011,192.211.5.161,admin,GATE
+4,137,Vaishali,GAT_00012,192.211.5.162,admin,GATE
+4,137,Vaishali,GAT_00013,192.211.5.163,admin,GATE
+2,21,Civil Lines,GAT_00001,192.153.5.151,ucm,ucmpasswd
+2,21,Civil Lines,GAT_00002,192.153.5.152,ucm,ucmpasswd
+2,21,Civil Lines,GAT_00011,192.153.5.161,ucm,ucmpasswd
+2,21,Civil Lines,GAT_00012,192.153.5.162,ucm,ucmpasswd
+2,21,Civil Lines,GAT_00021,192.153.5.171,ucm,ucmpasswd
+2,21,Civil Lines,GAT_00022,192.153.5.172,ucm,ucmpasswd
+2,21,Civil Lines,GAT_00023,192.153.5.173,ucm,ucmpasswd
+2,21,Civil Lines,GAT_00031,192.153.5.181,ucm,ucmpasswd
+2,21,Civil Lines,GAT_00032,192.153.5.182,ucm,ucmpasswd

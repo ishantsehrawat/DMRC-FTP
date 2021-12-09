@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>File Sharing App</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: grid;
+            place-items: center;
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden;
+            margin: 0vw 15vw 0vw 10vw;
+        }
+        header {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            padding-top: 5vh;
+            /* justify-content: space-around; */
+            height: 10vh;
+        }
+        .bod  {
+            margin:0vh 30vh 10vh -10vh;
+            padding: 0 9vw 0 9vw;
+            display: flex;
+            width: 80vw;
+            min-height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around; 
+        }
+        .bod > p {
+            font-weight: 400;
+            font-size: 18px;
+        }
+        .menu {
+            display: flex;
+            width: 80vw;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around; 
+        }
+        #Button {
+            height: 7vh;
+            width: 20vw;
+            color: white;
+            background-color: rgb(36, 123, 221);
+            transition: transform 500ms;
+            border: 0ch;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #Button:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="http://www.delhimetrorail.com/">
+            <img src="https://lh3.googleusercontent.com/proxy/SxzHst3Lq2OevBKXY6aP010G4rEmMMkXdtTL4XLka1NmmQRHw2q1SKrz9ITVl8OLvbZ6mJyWDc0rQy-1lxNqi1Y8dMD_t69yCA" alt="" />
+        </a>
+        <hr />
+    </header>
+    <div class="bod">
+        <p>The new File Sharing System is a light webapp which provides an archive of files which can be accessed by anywhere in the central system where any user can upload, read and use files from any node of the server.<br/>
+        This system needs no permission and space in the system so that it can be used by any system with simple access to the Central System.<br/>
+        This system tried to replace FileZilla sharing app. And is better at so many levels with the space and time management of the product.
+        </p>
+        <div class="menu">
+            <button id="Button" onclick="window.location.href='/upload'">UPLOAD</button>
+            <button id="Button" onclick="window.location.href='/download'">DOWNLOAD</button>
+        </div>
+    </div>
+</body>
+</html>

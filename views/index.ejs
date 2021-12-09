@@ -4,27 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>file uploads</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>File Sharing App</title>
     <style>
+        * {
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+        }
         body {
             display: grid;
             place-items: center;
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden;
+            margin: 0vw 10vw 0vw 10vw;
+        }
+        header {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            padding-top: 5vh;
+            /* justify-content: space-around; */
+            height: 10vh;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            height: 40vh;
+            margin-left: -25vw;
+            margin-top: 20vh;
+            width: 50vw;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .chooseFile {
+            margin: 10px;
+            padding: 2rem 1.5rem;
+            font: 1rem/1.5 "PT Sans", Arial, sans-serif;
+            color: #5a5a5a;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            z-index: -1;
+        }
+        /* .chooseFile,
+        .chooseFile:before,
+        .chooseFile:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        } */
+        #submitButton {
+            height: 7vh;
+            width: 20vw;
+            color: white;
+            background-color: rgb(36, 123, 221);
+            transition: transform 500ms;
+            border: 0ch;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #submitButton:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transform: translateY(-4px);
         }
     </style>
 </head>
 <body>
-    <h1>File uploads</h1>
-    <h3>Single File upload</h3>
+    <header>
+        <a href="http://localhost:5000/">
+            <img id="logo" src="https://lh3.googleusercontent.com/proxy/SxzHst3Lq2OevBKXY6aP010G4rEmMMkXdtTL4XLka1NmmQRHw2q1SKrz9ITVl8OLvbZ6mJyWDc0rQy-1lxNqi1Y8dMD_t69yCA" alt="" />
+        </a>
+    </header>
+    <!-- <h3>Single File upload</h3>
     <form action="/single" method="post" enctype="multipart/form-data">
         <input type="file" name="mfile" id="required" />
-        <!-- <input type="" name="mfile" id="required" /> -->
+        <input type="" name="mfile" id="required" /> 
         <input type="submit" value="upload" />
-    </form>
-    <h3>Multi file uploads</h3>
+    </form> -->
+    <!-- <h3>Multi file uploads</h3> -->
     <form action="/multiple" method="post" enctype="multipart/form-data">
-        <input type="file" name="mfiles" id="required" multiple/>
+        
+        <label for="required">
+            <input type="file" class="chooseFile" name="mFiles" value="BROWSE" id="required" multiple />
+        </label>
         <!-- <input type="" name="mfile" id="required" /> -->
-        <input type="submit" value="upload" />
+        <input type="submit" value="UPLOAD" id="submitButton"/>
     </form>
 </body>
 </html>
