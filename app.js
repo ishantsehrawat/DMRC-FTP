@@ -81,6 +81,8 @@ app.post('/multiple', async (req, res, next) => {
       res.send('Error uploading files...')
     }
   })
+
+
 // TODO: Download
 // TODO: Drag unable
 app.use(
@@ -89,34 +91,6 @@ app.use(
     serveIndex('../server/public', {icons: true})
 );
 
-// router.get('/download', function (req, res, next) {
-
-//     res.download(res.url, file.name);
-// })
-
-// app.get("/download", (res, req) => {
-//     var filepath = fs.readFileSync(__dirname + '/upload-folder/dramaticpenguin.MOV', 'binary');
-    // console.log(fs.stats)
-
-
-    // res.send(savePath);
-//     const testFolder = './public';
-
-// fs.readdirSync(testFolder).forEach(file => {
-//   console.log(file);
-// });
-
-//     var path = res.url;
-// })
-
-// var filePath ;
-
-// app.get('/download', (res, req) => {
-//     filePath = res.url;
-// })
-
 app.listen(5000, () => {
-    // console.log(FileList);
-    // console.log("The is path of file is " + filePath);
-    console.log("Rocket is not port 5000");
+    console.log("Rocket is on port 5000");
 });
